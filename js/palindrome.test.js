@@ -8,18 +8,18 @@ it("should return true for the base cases", () => {
   const result1 = palindrome(case1);
   const result2 = palindrome(case2);
 
-  expect(result1).toBeTruthy();
-  expect(result2).toBeTruthy();
+  expect(result1).toBe(true);
+  expect(result2).toBe(true);
 });
 
 it("should return true for a valid palindrome", () => {
   const str = "racecar";
   const result = palindrome(str);
-  expect(result).toBeTruthy();
+  expect(result).toBe(true);
 });
 
 it("should return false for an invalid palindrome", () => {
   const str = "invalid";
   const result = palindrome(str);
-  expect(result).toBeFalsy();
+  expect(result).toBe(false);
 });
